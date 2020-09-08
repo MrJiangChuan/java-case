@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form action="demo2" method="post">
+    <input type="text" placeholder="请输入用户名" >
+    <img id="img1" src="code" width="100px" height="50px"><br>
+    <input type="submit" value="提交">
+</form>
+<script>
+    document.getElementById("img1").onclick=function () {
+        let date = new Date();
+        let num = date.getTime()+Math.round(Math.random()*10);
+        this.setAttribute("src","code?id="+num);
+    }
+</script>
+</body>
+</html>

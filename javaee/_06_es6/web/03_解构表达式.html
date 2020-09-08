@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解构表达式</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 4];
+    let [x, y, z] = arr;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+    const person = {
+        name: 'tom',
+        age: 32,
+        lag: ['as', 'wd', 'gf']
+    };
+    const {name, age, lag} = person;
+    console.log(name);
+    console.log(age);
+    console.log(lag);
+</script>
+</body>
+</html>

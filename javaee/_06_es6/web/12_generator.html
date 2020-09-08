@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>generator</title>
+</head>
+<body>
+<script>
+    function* fun() {
+        yield "123";
+        yield "dff";
+        yield "cvsv";
+        return "gg";
+    }
+
+    let a = fun();
+    // console.log(a.next());
+    // console.log(a.next());
+    // console.log(a.next());
+    // console.log(a.next());
+
+    for(let f of a){
+        console.log(f);
+    }
+</script>
+</body>
+</html>

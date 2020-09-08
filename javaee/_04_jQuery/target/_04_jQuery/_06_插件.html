@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插件</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        //1.增强jQuery对象功能
+        $.fn.extend({
+           checked:function () {
+               alert(123);
+           },
+           ko:function (msg) {
+             alert(msg);
+           }
+        });
+        //2.增强jQuery全局功能
+        $.extend({
+            max:function (x, y) {
+                return x>=y?x:y;
+            }
+        });
+        $("body").checked();
+        $("div").ko("rrrr");
+
+        alert($.max(12,34));
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

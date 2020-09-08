@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery遍历</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<ul id="ul_1">
+    <li>北京</li>
+    <li>天津</li>
+    <li>上海</li>
+    <li>重庆</li>
+</ul>
+<script>
+    //1.js普通for循环
+    var ul1 = $("#ul_1 li");
+    // for (var i = 0; i < ul1.length; i++) {
+    //     alert(ul1[i].innerText)
+    //     // alert($(ul1[i]).text())
+    // }
+    //2.jq.each
+    // ul1.each(function (index, element) {
+    //     alert(this.innerText)
+    //     alert($(this).text())
+    //     alert(index+"--"+$(element).text());
+    // })
+    //3.$.each(object,callback)
+    // $.each(ul1,function (index,element) {
+    //     alert(this.innerText)
+    //     alert($(this).html())
+    //     alert(index+":"+element.innerHTML)
+    // })
+    //4.for of(jq3版本以上支持)
+    // for(item of ul1){
+        // alert(item.innerHTML)
+        // alert($(item).text())
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_03_javascript:war">
+    <output-path>$PROJECT_DIR$/_03_javascript/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>_03_javascript</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="_03_javascript.war">
+      <element id="artifact" artifact-name="_03_javascript:war exploded" />
+    </root>
+  </artifact>
+</component>

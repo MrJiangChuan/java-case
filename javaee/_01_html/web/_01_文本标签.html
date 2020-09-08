@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本标签</title>
+    <script>
+        window.onload=function () {
+           var el = document.getElementById("gg");
+           el.onclick=function () {
+               el.setAttribute("size","10px")
+               el.innerText="别点我"
+               // alert(el.getAttribute("face"))
+               // alert(el.innerText)
+               // var e2 = el.nextElementSibling
+               // var e3 = el.parentElement
+               // alert(e3.innerHTML)
+           }
+           el.ondblclick=function () {
+               el.setAttribute("size","4px")
+               // el.innerText="去你吗的闪避万都"
+               el.innerHTML="<i>去你吗的闪避万都</i>"
+           }
+        }
+    </script>
+</head>
+<body>
+    百日以上经，<br/>
+    黄河入海流。<br/>
+    <h1>黑马旅游网</h1>
+    <h2>黑马旅游网</h2>
+    <h3>黑马旅游网</h3>
+    <h4>黑马旅游网</h4>
+    <h5>黑马旅游网</h5>
+    <h6>黑马旅游网</h6>
+    <hr color="red" width="300" size="10"  align="left"/>
+    <p>1.今天田天气中年人好惨</p>
+    <p>2.今天田天气中年人好惨</p>
+    <p>3.今天田天气中年人好惨</p>
+    <b>fuck</b><br/>
+    <center>
+    <i>曹尼玛</i><br/>
+    </center>
+    <font id="gg" size="4px" color="#00ff00" face="微软雅黑">去你吗的闪避万都</font>
+    <p>你大爷</p>
+</body>
+</html>

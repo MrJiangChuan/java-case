@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jc.dao.EmployeeDao">
+    <!--开启二级缓存支持-->
+    <cache></cache>
+
+    <resultMap id="EmployeeDepMap" type="com.jc.entity.EmployeeDep">
+        <id property="uid" column="uid"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="dep_id" column="dep_id"/>
+        <!--多对一（mybatis中认为是一对一），一个员工对应一个部门-->
+        <association property="department"  javaType="com.jc.entity.Department">
+            <id property="did" column="did"/>
+            <result property="dep_name" column="dep_name"/>
+            <result property="location" column="location"/>
+        </association>
+    </resultMap>
+
+    <!--一对多，一个部门对应多个员工-->
+    <resultMap id="DepartmentEmpMap" type="com.jc.entity.DepartmentEmp">
+        <id property="did" column="did"/>
+        <result property="dep_name" column="dep_name"/>
+        <result property="location" column="location"/>
+        <collection property="employees" ofType="com.jc.entity.Employee">
+            <id property="uid" column="uid"/>
+            <result property="name" column="name"/>
+            <result property="age" column="age"/>
+            <result property="sex" column="sex"/>
+            <result property="name" column="name"/>
+            <result property="dep_id" column="dep_id"/>
+        </collection>
+    </resultMap>
+
+    <!--查询员工及其所在部门，延迟加载（先查员工信息，部门信息需要时在查询）-->
+    <resultMap id="EmployeeDepLazyMap" type="com.jc.entity.EmployeeDep">
+        <id property="uid" column="uid"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="dep_id" column="dep_id"/>
+        <association property="department" javaType="com.jc.entity.Department" column="dep_id" select="com.jc.dao.EmployeeDao.findDepartmentById"/>
+    </resultMap>
+
+    <resultMap id="DepartmentEmpLazyMap" type="com.jc.entity.DepartmentEmp">
+        <id property="did" column="did"/>
+        <result property="dep_name" column="dep_name"/>
+        <result property="location" column="location"/>
+        <collection property="employees" ofType="com.jc.entity.Employee" column="did" select="com.jc.dao.EmployeeDao.findEmployeeByDepId"/>
+    </resultMap>
+
+    <select id="findEmployeeAll" resultType="com.jc.entity.Employee">
+        select * from employee
+    </select>
+
+    <select id="findEmployeeById" parameterType="Integer" resultType="com.jc.entity.Employee" useCache="true">
+        select * from employee where uid = #{id}
+    </select>
+
+    <select id="findEmployeeByDepId" parameterType="Integer" resultType="com.jc.entity.Employee" useCache="true">
+        select * from employee where dep_id = #{id}
+    </select>
+
+    <select id="findDepartmentAll" resultType="com.jc.entity.Department">
+        select * from department
+    </select>
+
+    <select id="findDepartmentById" parameterType="Integer" resultType="com.jc.entity.Department">
+        SELECT * from department where did = #{id}
+    </select>
+
+<!--    <select id="findEmployeeDep" resultMap="EmployeeDepMap">-->
+<!--        select emp.*, dep.* from employee emp left outer join department dep on emp.dep_id=dep.did-->
+<!--    </select>-->
+
+    <select id="findEmployeeDep" resultMap="EmployeeDepLazyMap">
+        select * from employee
+    </select>
+
+<!--    <select id="findDepartmentEmp" resultMap="DepartmentEmpMap">-->
+<!--        select dep.*, emp.* from department dep left outer join employee emp on dep.did=emp.dep_id-->
+<!--    </select>-->
+
+    <select id="findDepartmentEmp" resultMap="DepartmentEmpLazyMap">
+        select * from department
+    </select>
+    
+    
+    
+    
+    <select id="findFuzzyEmployee" parameterType="com.jc.entity.Employee" resultType="com.jc.entity.Employee">
+<!--        select * from employee where 1=1-->
+<!--        <if test="name != null and name != '' ">-->
+<!--            and name like #{name}-->
+<!--        </if>-->
+<!--        <if test="sex != null and sex != ''">-->
+<!--            and sex like #{sex}-->
+<!--        </if>-->
+
+        select * from employee
+        <where>
+            <if test="name != null and name != '' ">
+                and name like #{name}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex like #{sex}
+            </if>
+        </where>
+    </select>
+
+    <select id="findEmployeeByIds" parameterType="com.jc.entity.QueryVo" resultType="com.jc.entity.Employee">
+        select * from employee
+        <where>
+            <if test="ids != null and ids.size() > 0">
+                <foreach collection="ids" open="uid in ( " close=")" item="id" separator=",">
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

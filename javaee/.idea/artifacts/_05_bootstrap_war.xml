@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_05_bootstrap:war">
+    <output-path>$PROJECT_DIR$/_05_bootstrap/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>_05_bootstrap</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="_05_bootstrap.war">
+      <element id="artifact" artifact-name="_05_bootstrap:war exploded" />
+    </root>
+  </artifact>
+</component>

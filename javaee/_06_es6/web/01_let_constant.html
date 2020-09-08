@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1.let关键字严格控制作用域
+    for (let i = 0; i < 6; i++) {
+        console.log(i);
+    }
+    console.log(i);//错误
+    //2.constant常量不可修改
+    const a = 10;
+    console.log(a);
+    a=12;//错误
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day02_文件上传" />
+        <module name="day02_拦截器" />
+        <module name="day01_参数绑定" />
+        <module name="day01_入门" />
+        <module name="day02_异常处理" />
+        <module name="day02_文件服务器" />
+        <module name="day02_响应数据和结果视图" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day01_入门" target="1.8" />
+      <module name="day01_参数绑定" target="1.8" />
+      <module name="day02_响应数据和结果视图" target="1.8" />
+      <module name="day02_异常处理" target="1.8" />
+      <module name="day02_拦截器" target="1.8" />
+      <module name="day02_文件上传" target="1.8" />
+      <module name="day02_文件服务器" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

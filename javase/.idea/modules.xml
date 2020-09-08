@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/_01_javabase/_01_javabase.iml" filepath="$PROJECT_DIR$/_01_javabase/_01_javabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_02_oop/_02_oop.iml" filepath="$PROJECT_DIR$/_02_oop/_02_oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03_api/_03_api.iml" filepath="$PROJECT_DIR$/_03_api/_03_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04_collection/_04_collection.iml" filepath="$PROJECT_DIR$/_04_collection/_04_collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_05_exception/_05_exception.iml" filepath="$PROJECT_DIR$/_05_exception/_05_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_06_thread/_06_thread.iml" filepath="$PROJECT_DIR$/_06_thread/_06_thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_07_io/_07_io.iml" filepath="$PROJECT_DIR$/_07_io/_07_io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_08_net/_08_net.iml" filepath="$PROJECT_DIR$/_08_net/_08_net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_09_reflect/_09_reflect.iml" filepath="$PROJECT_DIR$/_09_reflect/_09_reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_10_annotation/_10_annotation.iml" filepath="$PROJECT_DIR$/_10_annotation/_10_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_11_jdbc/_11_jdbc.iml" filepath="$PROJECT_DIR$/_11_jdbc/_11_jdbc.iml" />
+    </modules>
+  </component>
+</project>

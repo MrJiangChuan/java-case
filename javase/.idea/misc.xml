@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/_01_javabase/pom.xml" />
+        <option value="$PROJECT_DIR$/_02_oop/pom.xml" />
+        <option value="$PROJECT_DIR$/_03_api/pom.xml" />
+        <option value="$PROJECT_DIR$/_04_collection/pom.xml" />
+        <option value="$PROJECT_DIR$/_05_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/_06_thread/pom.xml" />
+        <option value="$PROJECT_DIR$/_07_io/pom.xml" />
+        <option value="$PROJECT_DIR$/_08_net/pom.xml" />
+        <option value="$PROJECT_DIR$/_09_reflect/pom.xml" />
+        <option value="$PROJECT_DIR$/_10_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/_11_jdbc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

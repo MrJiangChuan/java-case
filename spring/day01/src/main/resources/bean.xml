@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="birthday" class="java.util.Date"></bean>
+        <bean id="role1" class="com.jc.entity.Role">
+            <constructor-arg name="id" value="1"/>
+            <constructor-arg name="name" value="Cat"/>
+            <constructor-arg name="description" value="ewr32wr"/>
+        </bean>
+        <bean id="role2" class="com.jc.entity.Role">
+            <constructor-arg name="id" value="2"/>
+            <constructor-arg name="name" value="Tom"/>
+            <constructor-arg name="description" value="242ffd"/>
+        </bean>
+        <bean id="role3" class="com.jc.entity.Role">
+            <property name="id" value="3"/>
+        </bean>
+        <bean id="user" class="com.jc.entity.User" scope="singleton" init-method="toString">
+            <property name="id" value="1"/>
+            <property name="name" value="Jerry"/>
+            <property name="birthday" ref="birthday"/>
+            <property name="str">
+                <array value-type="java.lang.String">
+                    <value>仍然</value>
+                    <value>天天</value>
+                    <value>dsfs</value>
+                </array>
+            </property>
+            <property name="list">
+                <list value-type="java.lang.Integer">
+                    <value>12</value>
+                    <value>34</value>
+                    <value>12</value>
+                    <value>45</value>
+                </list>
+            </property>
+            <property name="sets">
+                <set value-type="com.jc.entity.Role">
+                    <ref bean="role1"/>
+                    <ref bean="role2"/>
+                    <ref bean="role3"/>
+                </set>
+            </property>
+            <property name="map">
+                <map key-type="java.lang.String" value-type="java.lang.String">
+                    <entry key="aa" value="qqw"/>
+                    <entry key="bb" value="qqdw"/>
+                    <entry key="cc" value="qqww"/>
+                </map>
+            </property>
+        </bean>
+
+
+
+
+</beans>

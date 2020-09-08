@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_02_css:war">
+    <output-path>$PROJECT_DIR$/_02_css/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>_02_css</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="_02_css.war">
+      <element id="artifact" artifact-name="_02_css:war exploded" />
+    </root>
+  </artifact>
+</component>

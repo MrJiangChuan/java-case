@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean id="userService" class="com.jc.service.impl.UserServiceImpl"></bean>-->
+
+<!--    <bean id="logger" class="com.jc.utils.Logger"></bean>-->
+
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="pt1" expression="execution(* com.jc.service.impl.*.*(..))"/>-->
+<!--        &lt;!&ndash;配置切面&ndash;&gt;-->
+<!--        <aop:aspect id="loggerAspect" ref="logger">-->
+<!--&lt;!&ndash;            <aop:before method="beforeLog" pointcut-ref="pt1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:after-returning method="returnAfterLog" pointcut-ref="pt1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:after-throwing method="exceptionLog" pointcut-ref="pt1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <aop:after method="afterLog" pointcut-ref="pt1"/>&ndash;&gt;-->
+<!--            <aop:around method="roundLog" pointcut-ref="pt1"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+<!--    <context:component-scan base-package="com.jc" />-->
+<!--    <aop:aspectj-autoproxy />-->
+
+
+</beans>

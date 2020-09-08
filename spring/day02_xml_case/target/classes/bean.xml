@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置业务层AccountService类-->
+    <bean id="accountService" class="com.jc.service.impl.AccountServiceImpl">
+        <!--注入accountDao对象-->
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+    <!--配置数据访问层AccountDao类-->
+    <bean id="accountDao" class="com.jc.dao.impl.AccountDaoImpl">
+        <!--注入queryRunner对象-->
+        <property name="qr" ref="queryRunner"/>
+    </bean>
+    <!--配置QueryRunner类-->
+    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner">
+        <!--注入dataSource对象-->
+        <constructor-arg name="ds" ref="dataSource"/>
+    </bean>
+    <!--配置DataSource类-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--配置数据库连接属性-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.48.120:3306/spring"/>
+        <property name="user" value="jc"/>
+        <property name="password" value="Mycat#666"/>
+    </bean>
+</beans>

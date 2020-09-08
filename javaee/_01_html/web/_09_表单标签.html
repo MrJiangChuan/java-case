@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<form action="#" method="post">
+    <label for="username">用户名：</label><input id="username" type="text" name="username" placeholder="请输入用户名"/><br/>
+    密码：<input type="password" name="password" placeholder="请输入密码"/><br/>
+    性别：<input type="radio" name="gender" value="male" checked/>男
+    <input type="radio" name="gender" value="female"/>女
+    <br/>
+    爱好：<input type="checkbox" name="hobby" value="篮球" checked/>篮球
+    <input type="checkbox" name="hobby" value="足球"/>足球
+    <input type="checkbox" name="hobby" value="看书"/>看书
+    <br/>
+    文件：<input type="file" name="picture"/>
+    <br/>
+    隐藏域：<input type="hidden" name="id" value="www"/>
+    <br/>
+    普通按钮：<input type="button" value="登录"/>
+    <br/>
+    图片提交按钮：<input type="image" src="image/icon_1.jpg"/>
+    <br/>
+    取色器：<input type="color" name="color"/>
+    <br/>
+    邮箱：<input type="email" name="email"/>
+    <br/>
+    生日：<input type="date" name="birthday"/>
+    <br/>
+    日期：<input type="datetime-local" name="date"/>
+    <br/>
+    范围：<input type="range" name="number"/>
+    <br/>
+    选择省份：<select name="province">
+                <option value="0">---请选择省份----</option>
+                <option value="1">---北京----</option>
+                <option value="2">---江苏----</option>
+                <option value="3">---上海----</option>
+             </select>
+    <br/>
+    自我描述：<textarea name="desc" rows="5" cols="20"></textarea>
+    <br/>
+    <input type="submit" value="提交"/>
+    <input type="reset" value="清空"/>
+</form>
+
+</body>
+</html>

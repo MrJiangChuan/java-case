@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="_01_javabase" />
+        <module name="_04_collection" />
+        <module name="_09_reflect" />
+        <module name="_06_thread" />
+        <module name="_11_jdbc" />
+        <module name="_10_annotation" />
+        <module name="_03_api" />
+        <module name="_05_exception" />
+        <module name="_07_io" />
+        <module name="_08_net" />
+        <module name="_02_oop" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_01_javabase" target="1.8" />
+      <module name="_02_oop" target="8" />
+      <module name="_03_api" target="1.8" />
+      <module name="_04_collection" target="8" />
+      <module name="_05_exception" target="1.8" />
+      <module name="_06_thread" target="1.8" />
+      <module name="_07_io" target="1.8" />
+      <module name="_08_net" target="1.8" />
+      <module name="_09_reflect" target="1.8" />
+      <module name="_10_annotation" target="1.8" />
+      <module name="_11_jdbc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

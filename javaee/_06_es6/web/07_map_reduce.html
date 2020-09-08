@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map_reduce</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    let arr2 = arr.map(item => item * 3);
+    console.log(arr2);
+
+    let rs = arr.reduce((a, b) => a + b, 1);
+    let rs2 = arr.reduce((a, b) => a * b);
+    console.log(rs);
+    console.log(rs2);
+</script>
+</body>
+</html>

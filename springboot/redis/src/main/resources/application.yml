@@ -1,0 +1,24 @@
+#\u914D\u7F6E\u670D\u52A1\u5668\u57FA\u672C\u4FE1\u606F
+server:
+  port: 80
+  servlet:
+    context-path: /redis
+
+spring:
+  #\u914D\u7F6E\u6570\u636E\u5E93\u8FDE\u63A5\u4FE1\u606F
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.48.120:3306/spring
+    username: jc
+    password: Mycat#666
+  #\u914D\u7F6Eredis\u8FDE\u63A5\u4FE1\u606F
+  redis:
+    host: 192.168.48.120
+    port: 6379
+    password: Mycat#666
+
+#\u914D\u7F6Emybatis\u4FE1\u606F
+mybatis:
+  type-aliases-package: com.jc.entity
+  mapper-locations: classpath:mappers/*

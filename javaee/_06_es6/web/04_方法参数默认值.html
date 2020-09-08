@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方法参数默认值</title>
+</head>
+<body>
+<script>
+    function f(a, b=2) {
+        // if(!b) b=1;
+        return a+b;
+    }
+    console.log(f(12,12));
+    console.log(f(13));
+</script>
+</body>
+</html>

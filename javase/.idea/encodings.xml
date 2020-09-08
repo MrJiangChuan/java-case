@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/_01_javabase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_02_oop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_03_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_04_collection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_05_exception" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_06_thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_07_io" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_08_net" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_09_reflect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_10_annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_11_jdbc" charset="UTF-8" />
+  </component>
+</project>

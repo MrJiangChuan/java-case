@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM</title>
+
+</head>
+<body>
+<input id="open_btn" type="button" value="打开窗口"/>
+<input id="close_btn" type="button" value="关闭窗口"/>
+<input id="histroy_length" type="button" value="历史记录"/>
+<input id="forward" type="button" value="前进"/>
+<script>
+    //1.弹出方法
+    // alert(123)
+    // var b = confirm("确定要退出吗？");
+    // if(b){
+    //     alert('ok')
+    // }else {
+    //     alert('no')
+    // }
+    // var s = prompt("请输入用户名");
+    // alert(s)
+    //2.与打开关闭有关的方法
+    // var open_btn = document.getElementById("open_btn");
+    // var close_btn = document.getElementById("close_btn");
+    // var newWindow;
+    // open_btn.onclick=function () {
+    //     newWindow = open("http://www.baidu.com");
+    // }
+    // close_btn.onclick=function () {
+    //     newWindow.close();
+    // }
+    //3.定时器
+    // var id1 = setTimeout(function () {
+    //     alert(1)
+    // },3000);
+    // var id2 = setInterval(function () {
+    //     alert(2)
+    // },3000);
+    // clearTimeout(id1)
+    // clearInterval(id2)
+    //4.地址栏对象location
+    // setTimeout("location.reload()",3000)
+    // alert(location.href)
+    // location.href = "http://www.baidu.com"
+    //5.历史记录history
+    document.getElementById("histroy_length").onclick=function () {
+        alert(history.length)
+    }
+    document.getElementById("forward").onclick=function () {
+        // history.forward()
+        history.go(1)
+    }
+</script>
+</body>
+</html>

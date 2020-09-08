@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="day01_ssm整合:war">
+    <output-path>$PROJECT_DIR$/day01_ssm整合/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>day01_ssm整合</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="day01_ssm整合.war">
+      <element id="artifact" artifact-name="day01_ssm整合:war exploded" />
+    </root>
+  </artifact>
+</component>

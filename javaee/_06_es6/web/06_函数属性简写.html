@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数属性简写</title>
+</head>
+<body>
+<script>
+    let a = {
+        name: '姜川',
+        age: 26,
+        study: function (e) {
+            console.log(this.name + "正在学习" + e);
+        },
+        sleep(){
+          console.log(this.name+'正在睡觉。。');
+        }
+    };
+    console.log(a);
+    console.log(a.study('外语'));
+    a.sleep();
+</script>
+</body>
+</html>

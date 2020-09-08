@@ -1,0 +1,20 @@
+#\u914D\u7F6E\u670D\u52A1\u5668\u57FA\u672C\u4FE1\u606F
+server:
+  port: 80
+  servlet:
+    context-path: /jpa
+
+#\u914D\u7F6E\u6570\u636E\u5E93\u8FDE\u63A5\u4FE1\u606F
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.48.120:3306/spring
+    username: jc
+    password: Mycat#666
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update

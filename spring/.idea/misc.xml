@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/day01/pom.xml" />
+        <option value="$PROJECT_DIR$/day02/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_xml_case/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_anno_case/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_aop_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_aop_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_trans_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_trans_anno/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

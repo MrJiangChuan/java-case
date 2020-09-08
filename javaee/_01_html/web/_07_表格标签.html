@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+<table border="1px" width="30%" cellpadding="0" cellspacing="0" bgcolor="#d2691e" align="center">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>male</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Jerry</td>
+        <td>female</td>
+        <td>年龄</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>男</td>
+        <td>24</td>
+    </tr>
+</table>
+<hr/>
+<table border="1px" width="30%" cellpadding="0" cellspacing="0" bgcolor="#d2691e" align="center">
+    <caption>学生信息表</caption>
+    <thead>
+        <tr bgcolor="aqua">
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#faebd7" align="center">
+            <td>Tom</td>
+            <td>male</td>
+            <td>23</td>
+        </tr>
+        <tr bgcolor="#ffe4c4" align="center">
+            <td>Jerry</td>
+            <td>female</td>
+            <td>年龄</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr bgcolor="#8a2be2" align="center">
+            <td>张三</td>
+            <td>男</td>
+            <td>24</td>
+        </tr>
+    </tfoot>
+</table>
+<hr/>
+<table border="1px" width="30%" cellpadding="0" cellspacing="0" bgcolor="#d2691e" align="center">
+    <tr>
+        <th rowspan="2">姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>male</td>
+    </tr>
+    <tr>
+        <td>Jerry</td>
+        <td>female</td>
+        <td>年龄</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td colspan="2">男</td>
+    </tr>
+</table>
+<hr/>
+<table border="1px" cellpadding="0" cellspacing="0" width="30%" align="center">
+    <caption>学生成绩表</caption>
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>成绩</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>1</td>
+            <td>小龙女</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td>杨过</td>
+            <td>男</td>
+            <td rowspan="2">90</td>
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td>金轮法王</td>
+            <td>男</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr align="center">
+            <td>总成绩</td>
+            <td colspan="3">190</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

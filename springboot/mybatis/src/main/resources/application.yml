@@ -1,0 +1,18 @@
+#\u914D\u7F6E\u670D\u52A1\u5668\u4FE1\u606F
+server:
+  port: 80
+  servlet:
+    context-path: /mybatis
+
+#\u914D\u7F6E\u6570\u636E\u5E93\u4FE1\u606F
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.48.120:3306/spring
+    username: jc
+    password: Mycat#666
+
+#\u914D\u7F6Emybatis\u4FE1\u606F
+mybatis:
+  mapper-locations: classpath:mappers/*
+  type-aliases-package: com.jc.entity

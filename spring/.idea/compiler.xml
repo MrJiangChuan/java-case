@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="day02" />
+        <module name="day01" />
+        <module name="day03_aop_anno" />
+        <module name="day04_trans_anno" />
+        <module name="day02_anno_case" />
+        <module name="day03_aop_xml" />
+        <module name="day02_xml_case" />
+        <module name="day04_trans_xml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day01" target="1.5" />
+      <module name="day02" target="1.5" />
+      <module name="day02_anno_case" target="1.5" />
+      <module name="day02_case" target="1.5" />
+      <module name="day02_xml_case" target="1.5" />
+      <module name="day03_aop_anno" target="1.5" />
+      <module name="day03_aop_xml" target="1.5" />
+      <module name="day04_trans_anno" target="1.5" />
+      <module name="day04_trans_xml" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        div > div {
+            color: red;
+        }
+
+        .ss {
+            width: 300px;
+            height: 200px;
+            border: red 1px solid;
+        }
+    </style>
+    <script>
+        /*
+
+         */
+        $(function () {
+            $("input[type='button']").click(function () {
+                //jQuery方式操作dom
+                // $("input[type='text']").val("dsdd")
+                // var val = $("input[type='text']").val();
+                // alert(val)
+
+                // var prop = $("input[type='button']").prop("value");
+                // var prop = $("input[type='button']").attr("ff");
+                // alert(prop)
+                // $("#div1").toggleClass("ss")
+                // $("#div1").addClass("ss")
+                // $("#div1").removeClass("ss")
+
+                // $("#div2").append(this)
+                // $("#div2").append($('<p>tttt</p>'))
+                // $("#div2").prepend($('<a>tfdsttt</a>'))
+                // $("#div2").after($('<h3>tfdsttt</h3>'))
+                // $("#div2").before($('<h1>tfdsttt</h1>'))
+                // $("#div1").empty();
+                // $("#div1").remove();
+                // $("div div:first").remove();
+                // $("#div2").append($("#div1 div p"))
+                // $("#div2").append($("#div1 div p").clone())
+
+                //纯js操作dom
+                // var el_p = document.createElement("a");
+                // var txt_node = document.createTextNode("天大地大，我最大！");
+                // var attr = document.createAttribute("href");
+                // attr.nodeValue="http://www.baidu.com";
+                // var comm = document.createComment("FUCK YOU...");
+                // el_p.setAttributeNode(attr);
+                // el_p.appendChild(txt_node);
+                // var el_body = document.getElementsByTagName("body")[0];
+                // el_body.appendChild(comm);
+                // el_body.appendChild(el_p);
+
+            });
+        })
+    </script>
+</head>
+<body>
+<div id="div1" class="ss">
+    <div>
+        <p>rre</p>
+    </div>
+    <div>rrttrg43</div>
+</div>
+<div id="div2">rrrrr</div>
+<input type="button" value="按钮" ff="rr">
+<input type="text">
+</body>
+</html>

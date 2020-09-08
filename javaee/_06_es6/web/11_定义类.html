@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定义类</title>
+</head>
+<body>
+<script>
+    class Person {
+        static classname = 'ddd';
+
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        show() {
+            console.log(this.name + "----" + this.age);
+        }
+
+        static sleep() {
+            console.log('睡觉');
+        }
+
+    }
+    let person = new Person('tom',21);
+    console.log(person.show());
+    console.log(Person.classname);
+    console.log(Person.sleep())
+    Person.classname='ffff';
+    console.log(Person.classname);
+
+
+    class  Tom extends Person{
+        constructor(name,age){
+            super(name,age);
+        }
+        eat(){
+            console.log('吃饭');
+        }
+    }
+    let tom = new Tom('姜川',26);
+    console.log(tom.eat());
+    console.log(tom.show());
+    console.log(Tom.classname);
+    console.log(Tom.sleep());
+
+
+
+</script>
+</body>
+</html>

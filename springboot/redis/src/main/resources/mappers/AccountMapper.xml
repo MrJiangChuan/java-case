@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jc.mapper.AccountMapper">
+
+    <select id="findAll" resultType="Account">
+        select * from account
+    </select>
+
+    <select id="findOneById" parameterType="Integer" resultType="Account">
+        select * from account where id = #{id}
+    </select>
+
+    <insert id="save" parameterType="Account">
+        insert into account(name, money) values(#{name}, #{money})
+    </insert>
+
+    <update id="update" parameterType="Account">
+        update account set name = #{name}, money = #{money} where id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Integer">
+        delete from account where id = #{id}
+    </delete>
+
+</mapper>

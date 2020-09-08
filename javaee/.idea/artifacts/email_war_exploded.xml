@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="email:war exploded">
+    <output-path>$PROJECT_DIR$/email/target/email</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>email</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="email" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.mail:javax.mail-api:1.5.6" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.3" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/email/target/email/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="email/web/Web" />
+    </root>
+  </artifact>
+</component>

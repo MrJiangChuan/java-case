@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue入门</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<div id="app">
+   <h1 v-cloak>{{msg}}</h1>
+   <h1 v-text='msg'></h1>
+   <h1 v-html='msg'></h1>
+   <h1 v-pre>{{msg}}}</h1>
+    <a v-bind:href="href">wwww</a><br>
+    <input type="text" v-model="msg"><br>
+    <input type="button" value="按钮" v-on:click="fun(122,$event)"><br>
+    <img src="img/banner_1.jpg" v-if="flag">
+    <img src="img/banner_2.jpg" v-else>
+    <ul>
+        <li v-for="item in list">{{item}}</li>
+    </ul>
+
+</div>
+<script src="js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            msg:"<i>Hello World!</i>",
+            href:'http://www.baidu.com',
+            flag:false,
+            list:[1,2,3,4,5]
+        },
+        methods:{
+            fun(e,event){
+                alert(event.target.value);
+            }
+        }
+    });
+</script>
+</body>
+</html>

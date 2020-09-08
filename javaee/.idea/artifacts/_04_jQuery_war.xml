@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_04_jQuery:war">
+    <output-path>$PROJECT_DIR$/_04_jQuery/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>_04_jQuery</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="_04_jQuery.war">
+      <element id="artifact" artifact-name="_04_jQuery:war exploded" />
+    </root>
+  </artifact>
+</component>

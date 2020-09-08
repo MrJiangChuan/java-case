@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        *{
+            border: red 1px solid;
+        }
+        div,p{
+            background-color: blue;
+        }
+        div span{
+            font-size: 30px;
+        }
+        div > p{
+            background-color: red;
+        }
+        a[href='#']{
+            font-size: 20px;
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div><span>eeee</span></div>
+<div>rrrrreeee</div>
+<p>ddddssa</p>
+<a href="#">ds34fvd</a>
+<h3>g34geed</h3>
+<img src="imgs/logo.jpg" alt="黑马程序员">
+<div><p>ttttt</p></div>
+</body>
+</html>

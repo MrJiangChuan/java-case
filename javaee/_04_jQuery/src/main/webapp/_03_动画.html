@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        #div1{
+            border: red 1px solid;
+            width: 300px;
+            height: 300px;
+            background: red;
+            box-sizing: border-box;
+        }
+    </style>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<input type=button value="默认显示">
+<input type=button value="默认隐藏">
+<input type=button value="默认切换">
+<input type=button value="滑动显示">
+<input type=button value="滑动隐藏">
+<input type=button value="滑动切换">
+<input type=button value="淡入淡出显示">
+<input type=button value="淡入淡出隐藏">
+<input type=button value="淡入淡出切换">
+<div id="div1" hidden="hidden"></div>
+<script>
+    $("input[value='默认显示']").click(function () {
+        $("#div1").show(1000,"swing",function () {
+            // alert("显示了")
+        });
+    });
+    $("input[value='默认隐藏']").click(function () {
+        $("#div1").hide(1000,"swing",function () {
+            // alert("显示了")
+        });
+    });
+    $("input[value='默认切换']").click(function () {
+        $("#div1").toggle(1000,"swing",function () {
+            // alert("显示了")
+        });
+    });
+
+    $("input[value='滑动显示']").click(function () {
+        $("#div1").slideDown("slow");
+    });
+    $("input[value='滑动隐藏']").click(function () {
+        $("#div1").slideUp("slow");
+    });
+    $("input[value='滑动切换']").click(function () {
+        $("#div1").slideToggle("slow");
+    });
+
+    $("input[value='淡入淡出显示']").click(function () {
+        $("#div1").fadeIn("slow");
+    });
+    $("input[value='淡入淡出隐藏']").click(function () {
+        $("#div1").fadeOut("slow");
+    });
+    $("input[value='淡入淡出切换']").click(function () {
+        $("#div1").fadeToggle("slow");
+    });
+
+</script>
+</body>
+</html>

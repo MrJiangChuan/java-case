@@ -1,0 +1,18 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+student:
+  id: 1
+  name: tom
+  age: 25
+
+provinces:
+  - 江苏
+  - 北京
+  - 上海
+
+map:
+  one: 刘备
+  two: 张飞

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+
+<h3 th:text="${user}">aaaa</h3>
+<p th:utext="${userHtml}">aaaa</p>
+<h3 th:style="'color:'+ ${color}">aaaa</h3>
+<a th:attr="href=${link}">www.baidu.com</a>
+
+<p th:if="${flag>10}">12</p>
+<p th:if="${flag<=10}">10</p>
+
+<div th:switch="${flag}">
+    <p th:case="1">1</p>
+    <p th:case="12">12</p>
+</div>
+<ul>
+    <li th:each="item:${list}" th:text="${item}"></li>
+</ul>
+
+</body>
+</html>

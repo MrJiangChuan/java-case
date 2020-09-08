@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h3>welcome to spring Boot !!!</h3>
+<a th:attr="href=${#request.getContextPath()}+'/test/test1'" href="https://www.jd.com">home</a>
+</body>
+</html>

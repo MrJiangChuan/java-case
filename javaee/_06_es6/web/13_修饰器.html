@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修饰器</title>
+</head>
+<body>
+<script>
+    /*
+     *需要引入转码器才能执行
+     * 将ES6-->ES5
+     */
+    @T
+    class User{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        show(){
+            console.log(this.name+"---"+this.age);
+        }
+
+    }
+
+    function T(target) {
+        target.country = 'china';//给所在的类添加一个静态属性
+    }
+
+    console.log(User.country);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="_02_css:war exploded">
+    <output-path>$PROJECT_DIR$/_02_css/target/_02_css</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>_02_css</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="_02_css" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/_02_css/target/_02_css/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="_02_css/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day01_入门" />
+    <file type="web" url="file://$PROJECT_DIR$/day01_参数绑定" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_响应数据和结果视图" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_异常处理" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_拦截器" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_文件上传" />
+    <file type="web" url="file://$PROJECT_DIR$/day02_文件服务器" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/day01_入门/pom.xml" />
+        <option value="$PROJECT_DIR$/day01_参数绑定/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_响应数据和结果视图/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_文件上传/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_文件服务器/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_异常处理/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_拦截器/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

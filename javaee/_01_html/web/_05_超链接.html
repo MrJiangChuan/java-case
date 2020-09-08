@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接</title>
+    <script>
+        window.onload=function () {
+            var el = document.getElementById("qq")
+            el.onclick=function () {
+                location.href="http://www.baidu.com";
+            }
+        }
+        function f(a) {
+            alert(a)
+        }
+    </script>
+</head>
+<body>
+<a href="http://www.baidu.com" target="_blank">dddd</a>
+<a href="http://www.baidu.com" target="_self">dddd</a>
+<a href="a.html" target="_blank">dddd</a>
+<a href="javascript:f(2)" >dddd</a>
+<a href="#" >dddd</a>
+<a href="mailto:yy@qq.com" >dddd</a>
+<img id="qq" src="imgs/banner_1.jpg" alt="xxxxx"/>
+<!--<a href="http://www.baidu.com"><img id="qq" src="imgs/banner_1.jpg" alt="xxxxx"/></a>-->
+</body>
+</html>

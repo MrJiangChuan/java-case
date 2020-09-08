@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="_03_javascript" />
+        <module name="_02_css" />
+        <module name="_05_bootstrap" />
+        <module name="_04_jQuery" />
+        <module name="email" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_02_css" target="1.8" />
+      <module name="_03_javascript" target="1.8" />
+      <module name="_04_jQuery" target="1.8" />
+      <module name="_05_bootstrap" target="1.8" />
+      <module name="email" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
